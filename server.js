@@ -75,6 +75,8 @@ const server = http.createServer((request, response) => {
   }
 });
 
-server.listen(port, host, () => {
-  console.log(`Undangan Intan & Irfan siap di http://${host}:${port}`);
+const PORT = process.env.PORT || port;
+const HOST = "0.0.0.0";
+server.listen(PORT, HOST, () => {
+  console.log(`Undangan Intan & Irfan siap berjalan di http://${HOST}:${PORT}`);
 });
