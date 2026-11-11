@@ -1,0 +1,12 @@
+{
+  "name": "undangan-intan-irfan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Undangan pernikahan digital Intan dan Irfan",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

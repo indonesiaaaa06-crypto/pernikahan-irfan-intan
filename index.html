@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Undangan pernikahan Intan dan Irfan, 12 Desember 2028.">
+  <title>Intan &amp; Irfan — Undangan Pernikahan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <div class="love-rain" id="love-rain" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Lewati ke isi undangan</a>
+  <div class="page-cover" id="cover" aria-labelledby="cover-title">
+    <div class="cover-photo" aria-hidden="true"></div>
+    <div class="cover-content">
+      <p class="eyebrow cover-kicker">The wedding celebration of</p>
+      <h1 id="cover-title">Intan <span>&amp;</span> Irfan</h1>
+      <div class="cover-divider" aria-hidden="true"><i></i><span>✦</span><i></i></div>
+      <p class="cover-date">SELASA, 12 DESEMBER 2028</p>
+      <p class="cover-to">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+      <p class="guest-name" id="guest-name">Tamu Undangan</p>
+      <button class="button button-light" id="open-invitation" type="button">
+        <span aria-hidden="true">✉</span> Buka Undangan
+      </button>
+      <p class="cover-note">Mohon maaf apabila ada kesalahan penulisan nama dan gelar</p>
+    </div>
+    <span class="cover-flower flower-one" aria-hidden="true">✿</span>
+    <span class="cover-flower flower-two" aria-hidden="true">✿</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Intan dan Irfan, kembali ke beranda">I<span>&amp;</span>I</a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Buka navigasi">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+      <a href="#couple">Mempelai</a>
+      <a href="#story">Cerita</a>
+      <a href="#event">Acara</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#wishes">Ucapan</a>
+      <a href="#social">Sosial</a>
+    </nav>
+    <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Putar musik latar">
+      <span class="music-icon" aria-hidden="true">♫</span><span class="music-label">Putar Musik</span>
+    </button>
+    <audio id="background-music" src="assets/musik.mp3" preload="none" loop></audio>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Suasana pernikahan yang hangat di taman"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">A celebration of love</p>
+        <h2>Dengan penuh rasa syukur,<br>kami mengundang Anda</h2>
+        <p class="hero-names">Intan <span>&amp;</span> Irfan</p>
+        <p class="hero-date">12 . 12 . 2028</p>
+        <a class="button button-outline" href="#couple">Jelajahi Undangan <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-caption"><span>Aceh Sigli</span><span>Scroll to discover</span></div>
+    </section>
+
+    <section class="intro section-pad" id="couple">
+      <div class="section-label"><span>01</span><i></i><span>DUA HATI, SATU CERITA</span></div>
+      <p class="intro-quote">“Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu...”</p>
+      <p class="verse">(QS. Ar-Rum: 21)</p>
+      <div class="couple-grid">
+        <article class="person-card">
+          <img class="portrait portrait-bride" src="assets/intan.jpg" alt="Foto Intan, calon mempelai perempuan">
+          <p class="person-role">Mempelai perempuan</p>
+          <h3>Intan</h3>
+          <p>Putri pertama dari<br>Bapak Hendra &amp; Ibu Sari</p>
+          <a class="social-link" href="https://www.instagram.com/maulizaa_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Intan">@maulizaa_</a>
+        </article>
+        <div class="ampersand" aria-hidden="true">&amp;</div>
+        <article class="person-card">
+          <img class="portrait portrait-groom" src="assets/irfan.jpg" alt="Foto Irfan, calon mempelai laki-laki">
+          <p class="person-role">Mempelai laki-laki</p>
+          <h3>Irfan</h3>
+          <p>Putra kedua dari<br>Bapak Budi &amp; Ibu Ratna</p>
+          <a class="social-link" href="https://www.instagram.com/irfankamal_5.5/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Irfan">@irfankamal_5.5</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="story section-pad" id="story">
+      <div class="story-image" role="img" aria-label="Pasangan berjalan bersama di alam"></div>
+      <div class="story-content">
+        <div class="section-label"><span>02</span><i></i><span>PERJALANAN KAMI</span></div>
+        <p class="eyebrow">It was always you</p>
+        <h2>Sebuah cerita,<br>yang menemukan rumah.</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-year">2021</span>
+            <div><h3>Awal perkenalan</h3><p>Berawal dari obrolan singkat di sebuah kedai kopi, siapa sangka percakapan kecil menjadi cerita sepanjang ini.</p></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2023</span>
+            <div><h3>Memilih untuk bersama</h3><p>Lewat banyak tawa dan perjalanan, kami sepakat tumbuh bersama dan saling menjadi tempat pulang.</p></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-year">2028</span>
+            <div><h3>Menuju selamanya</h3><p>Dengan restu keluarga dan penuh syukur, kami siap memulai babak baru kehidupan.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-section section-pad">
+      <p class="eyebrow">Save the date</p>
+      <h2>Menuju hari bahagia</h2>
+      <p class="countdown-date">Selasa, 12 Desember 2028</p>
+      <div class="countdown" id="countdown" aria-label="Hitung mundur menuju hari pernikahan">
+        <div><strong id="days">—</strong><span>Hari</span></div>
+        <div><strong id="hours">—</strong><span>Jam</span></div>
+        <div><strong id="minutes">—</strong><span>Menit</span></div>
+        <div><strong id="seconds">—</strong><span>Detik</span></div>
+      </div>
+      <button class="text-button" id="calendar-button" type="button">＋ Simpan ke kalender</button>
+    </section>
+
+    <section class="event-section section-pad" id="event">
+      <div class="section-label"><span>03</span><i></i><span>HARI ISTIMEWA</span></div>
+      <h2 class="section-title">Dengan memohon rahmat dan ridha Allah SWT,<br>kami bermaksud menyelenggarakan pernikahan kami.</h2>
+      <div class="event-grid">
+        <article class="event-card">
+          <span class="event-number">01</span>
+          <p class="eyebrow">The sacred vow</p>
+          <h3>Akad Nikah</h3>
+          <p class="event-date">Selasa, 12 Desember 2028</p>
+          <p class="event-time">09.00 – 10.00 WIB</p>
+          <div class="event-rule"></div>
+          <p>Kota Sigli</p>
+          <a class="event-map-link" href="https://maps.google.com/?q=Kota+Sigli" target="_blank" rel="noopener noreferrer">Lihat peta akad ↗</a>
+        </article>
+        <article class="event-card">
+          <span class="event-number">02</span>
+          <p class="eyebrow">Dinner &amp; celebration</p>
+          <h3>Resepsi</h3>
+          <p class="event-date">Selasa, 12 Desember 2028</p>
+          <p class="event-time">11.00 – 14.00 WIB</p>
+          <div class="event-rule"></div>
+          <p>Kota Sigli, Aceh</p>
+          <a class="event-map-link" href="https://maps.google.com/?q=Kota+Sigli+Aceh" target="_blank" rel="noopener noreferrer">Lihat peta resepsi ↗</a>
+        </article>
+      </div>
+      <div class="map-grid">
+        <div class="map-frame">
+          <h3>Akad Nikah · Kota Sigli</h3>
+          <iframe title="Peta lokasi akad nikah di Kota Sigli" src="https://maps.google.com/maps?q=Kota%20Sigli&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-frame">
+          <h3>Resepsi · Kota Sigli, Aceh</h3>
+          <iframe title="Peta lokasi resepsi di Kota Sigli, Aceh" src="https://maps.google.com/maps?q=Kota%20Sigli%20Aceh&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery">
+      <div class="section-label"><span>04</span><i></i><span>SEDIKIT POTONGAN KISAH</span></div>
+      <div class="gallery-heading"><h2 class="section-title">Momen yang kami simpan</h2><p>Every picture tells a little piece of our story.</p></div>
+      <figure class="featured-photo-frame">
+        <button class="featured-photo" type="button" data-image="assets/momen2.jpg" aria-label="Perbesar foto berbingkai Intan dan Irfan">
+          <span class="frame-corner frame-corner-one" aria-hidden="true">✦</span>
+          <span class="frame-corner frame-corner-two" aria-hidden="true">✦</span>
+        </button>
+        <figcaption><span>OUR FAVORITE MOMENT</span><strong>Intan &amp; Irfan</strong><span>12 . 12 . 2028</span></figcaption>
+      </figure>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-one" type="button" data-image="assets/momen1.jpg" aria-label="Perbesar foto Intan dan Irfan di tepi laut"></button>
+        <button class="gallery-item gallery-two" type="button" data-image="assets/momen2.jpg" aria-label="Perbesar foto Intan dan Irfan bersama"></button>
+        <button class="gallery-item gallery-three" type="button" data-image="assets/momen3.jpg" aria-label="Perbesar foto Intan dan Irfan di alam"></button>
+        <button class="gallery-item gallery-four" type="button" data-image="assets/momen4.jpg" aria-label="Perbesar foto Intan dan Irfan merayakan momen bersama"></button>
+        <button class="gallery-item gallery-five" type="button" data-image="assets/momen5.jpg" aria-label="Perbesar foto momen manis Intan dan Irfan"></button>
+        <button class="gallery-item gallery-six" type="button" data-image="assets/momen6.jpg" aria-label="Perbesar foto Irfan"></button>
+      </div>
+    </section>
+
+    <section class="rsvp-section section-pad" id="rsvp">
+      <div class="rsvp-copy">
+        <div class="section-label"><span>05</span><i></i><span>KONFIRMASI KEHADIRAN</span></div>
+        <p class="eyebrow">We saved you a seat</p>
+        <h2>Merupakan suatu kebahagiaan bagi kami apabila Anda berkenan hadir dan memberikan doa restu.</h2>
+        <p>Mohon konfirmasi kehadiran sebelum 5 Desember 2028.</p>
+        <span class="rsvp-flower" aria-hidden="true">✿</span>
+      </div>
+      <form class="rsvp-form" id="rsvp-form">
+        <label for="rsvp-name">Nama lengkap</label>
+        <input id="rsvp-name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Nama Anda" required>
+        <label for="rsvp-attendance">Konfirmasi kehadiran</label>
+        <select id="rsvp-attendance" name="attendance" required>
+          <option value="">Pilih konfirmasi</option>
+          <option value="hadir">Dengan senang hati, saya hadir</option>
+          <option value="tidak_hadir">Mohon maaf, saya belum dapat hadir</option>
+        </select>
+        <label for="rsvp-guests">Jumlah tamu</label>
+        <select id="rsvp-guests" name="guests">
+          <option value="1">1 orang</option><option value="2">2 orang</option><option value="3">3 orang</option>
+          <option value="4">4 orang</option><option value="5">5 orang</option><option value="6">6 orang</option>
+          <option value="7">7 orang</option><option value="8">8 orang</option><option value="9">9 orang</option>
+          <option value="10">10 orang</option>
+        </select>
+        <button class="button button-dark form-submit" type="submit">Kirim Konfirmasi <span aria-hidden="true">→</span></button>
+        <p class="form-feedback" id="rsvp-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="wishes-section section-pad" id="wishes">
+      <div class="section-label"><span>06</span><i></i><span>DOA &amp; UCAPAN</span></div>
+      <p class="eyebrow">Words from the heart</p>
+      <h2 class="section-title">Kirimkan doa terbaik</h2>
+      <p class="wishes-intro">Satu ucapan kecil, jadi kenangan besar untuk kami.</p>
+      <div class="wishes-layout">
+        <form class="wish-form" id="wish-form">
+          <div class="wish-form-heading"><span class="wish-form-icon" aria-hidden="true">✦</span><h3>Tinggalkan pesan</h3></div>
+          <label for="wish-name">Nama</label>
+          <input id="wish-name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Nama Anda" required>
+          <label for="wish-message">Ucapan &amp; doa</label>
+          <textarea id="wish-message" name="message" rows="4" maxlength="500" placeholder="Tuliskan doa terbaik untuk kami..." required></textarea>
+          <button class="button button-dark form-submit" type="submit">Kirim Ucapan <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" id="wish-feedback" role="status" aria-live="polite"></p>
+        </form>
+        <div class="wishes-feed">
+          <div class="wishes-feed-heading">
+            <div><span class="eyebrow">DARI HATI KE HATI</span><h3>Ucapan untuk kita</h3></div>
+            <span class="live-status" id="live-status"><i aria-hidden="true"></i><span id="live-status-text">Menghubungkan...</span></span>
+          </div>
+          <p class="wishes-count"><strong id="wishes-count">—</strong> doa dan ucapan</p>
+          <div class="wishes-list" id="wishes-list" aria-live="polite" aria-label="Ucapan dari tamu">
+            <p class="loading-note">Memuat ucapan...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gift-section section-pad" id="gift">
+      <div class="gift-mark" aria-hidden="true">♡</div>
+      <p class="eyebrow">A little kindness</p>
+      <h2>Doa restu Anda adalah hadiah terindah.</h2>
+      <p>Bagi keluarga dan sahabat yang ingin berbagi tanda kasih, dapat mengirimkannya melalui:</p>
+      <div class="gift-card">
+        <span class="gift-bank">BANK MANDIRI</span>
+        <strong id="account-number">1234567890</strong>
+        <span>a.n. Intan</span>
+        <button class="text-button" id="copy-account" type="button">Salin nomor rekening</button>
+      </div>
+      <p class="gift-note">Terima kasih atas doa dan perhatian yang diberikan.</p>
+    </section>
+
+    <section class="social-section section-pad" id="social">
+      <div class="social-ornament" aria-hidden="true">✦</div>
+      <p class="eyebrow">Stay close, share the love</p>
+      <h2>Ikuti cerita kami</h2>
+      <p class="social-intro">Mari berbagi kebahagiaan dan abadikan momen bersama di media sosial.</p>
+      <div class="social-profiles">
+        <a class="social-profile" href="https://www.instagram.com/maulizaa_/" target="_blank" rel="noopener noreferrer">
+          <span class="social-icon instagram-icon" aria-hidden="true">◎</span>
+          <span><small>INSTAGRAM</small><strong>@maulizaa_</strong></span>
+          <span class="social-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="social-profile" href="https://www.instagram.com/irfankamal_5.5/" target="_blank" rel="noopener noreferrer">
+          <span class="social-icon instagram-icon" aria-hidden="true">◎</span>
+          <span><small>INSTAGRAM</small><strong>@irfankamal_5.5</strong></span>
+          <span class="social-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <p class="wedding-hashtag">#IntanIrfan2028</p>
+      <div class="share-actions" aria-label="Bagikan undangan">
+        <a class="share-button share-whatsapp" id="share-whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">◉</span> Hubungi via WhatsApp
+        </a>
+        <a class="share-button share-facebook" id="share-facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">f</span> Facebook
+        </a>
+        <button class="share-button share-copy" id="copy-invitation-link" type="button">
+          <span aria-hidden="true">↗</span> Salin tautan
+        </button>
+      </div>
+      <p class="share-note">Bagikan undangan ini kepada keluarga dan sahabat.</p>
+    </section>
+
+    <section class="closing-section">
+      <div class="closing-image" role="img" aria-label="Bunga putih sebagai penutup undangan"></div>
+      <div class="closing-copy">
+        <p class="eyebrow">Until our forever begins</p>
+        <h2>Merupakan suatu kehormatan<br>bagi kami atas kehadiran Anda.</h2>
+        <p>Dengan penuh cinta,</p>
+        <span class="closing-names">Intan &amp; Irfan</span>
+        <span class="closing-date">12 . 12 . 2028</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand" href="#home">I<span>&amp;</span>I</a>
+      <p>Made with love for Intan &amp; Irfan</p>
+      <a href="#home" class="back-top">Kembali ke atas ↑</a>
+    </div>
+    <div class="footer-admin-row"><button class="footer-admin-button" id="admin-open" type="button">Admin</button></div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Foto galeri">
+    <button class="lightbox-close" type="button" aria-label="Tutup foto">×</button>
+    <img id="lightbox-image" alt="Foto kenangan Intan dan Irfan">
+  </dialog>
+  <dialog class="admin-dialog" id="admin-dialog" aria-labelledby="admin-title">
+    <button class="admin-close" id="admin-close" type="button" aria-label="Tutup panel admin">×</button>
+    <section class="admin-login-view" id="admin-login-view">
+      <p class="eyebrow">PANEL ADMIN</p>
+      <h2 id="admin-title">Daftar konfirmasi kehadiran</h2>
+      <p class="admin-intro">Masuk dengan akun admin Firebase untuk melihat RSVP.</p>
+      <form class="admin-login-form" id="admin-login-form">
+        <label for="admin-email">Email admin</label>
+        <input id="admin-email" name="email" type="email" value="indonesiaaaa05@gmail.com" autocomplete="username" readonly>
+        <label for="admin-password">Password akun Firebase</label>
+        <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+        <button class="button button-dark form-submit" type="submit">Masuk</button>
+        <p class="form-feedback" id="admin-login-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="admin-rsvp-view" id="admin-rsvp-view" hidden>
+      <div class="admin-rsvp-heading">
+        <div><p class="eyebrow">PANEL ADMIN</p><h2>Kelola pesan tamu</h2></div>
+        <div class="admin-session-actions">
+          <button class="text-button" id="admin-login-open" type="button">Masuk admin</button>
+          <button class="text-button" id="admin-signout" type="button" hidden>Keluar</button>
+        </div>
+      </div>
+      <div class="admin-tabs" role="tablist" aria-label="Pesan tamu">
+        <button class="admin-tab" id="admin-tab-rsvps" type="button" role="tab" aria-selected="false" aria-controls="admin-rsvps-panel">Konfirmasi</button>
+        <button class="admin-tab is-active" id="admin-tab-wishes" type="button" role="tab" aria-selected="true" aria-controls="admin-wishes-panel">Ucapan</button>
+      </div>
+      <section id="admin-rsvps-panel" role="tabpanel" aria-labelledby="admin-tab-rsvps" hidden>
+        <p class="admin-rsvp-count" id="admin-rsvp-count">Memuat konfirmasi...</p>
+        <div class="admin-rsvp-list" id="admin-rsvp-list" aria-live="polite"></div>
+        <h3 class="admin-section-heading">Pesan &amp; doa tamu</h3>
+        <p class="admin-rsvp-count" id="admin-confirmation-wishes-count">Memuat semua ucapan tamu...</p>
+        <div class="admin-rsvp-list" id="admin-confirmation-wishes-list" aria-live="polite"></div>
+        <button class="button button-dark admin-rsvp-login" id="admin-rsvp-login" type="button" hidden>Masuk admin untuk melihat konfirmasi</button>
+      </section>
+      <section id="admin-wishes-panel" role="tabpanel" aria-labelledby="admin-tab-wishes">
+        <p class="admin-rsvp-count" id="admin-wishes-count">Memuat ucapan...</p>
+        <div class="admin-rsvp-list" id="admin-wishes-list" aria-live="polite"></div>
+      </section>
+      <p class="form-feedback is-error" id="admin-rsvp-feedback" role="status" aria-live="polite"></p>
+    </section>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

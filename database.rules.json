@@ -1,0 +1,63 @@
+{
+  "rules": {
+    "wishes": {
+      ".read": "auth != null",
+      ".indexOn": ["created_at"],
+      "$wishId": {
+        ".write": "auth != null && (!data.exists() || (auth.token.email == 'indonesiaaaa05@gmail.com' && !newData.exists()))",
+        ".validate": "newData.hasChildren(['name', 'message', 'created_at'])",
+        "name": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 80"
+        },
+        "message": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 500"
+        },
+        "created_at": {
+          ".validate": "newData.isNumber()"
+        },
+        "$other": {
+          ".validate": false
+        }
+      }
+    },
+    "admin_replies": {
+      ".read": "auth != null",
+      "$wishId": {
+        ".write": "auth != null && auth.token.email == 'indonesiaaaa05@gmail.com'",
+        ".validate": "newData.hasChildren(['message', 'created_at'])",
+        "message": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 500"
+        },
+        "created_at": {
+          ".validate": "newData.isNumber()"
+        },
+        "$other": {
+          ".validate": false
+        }
+      }
+    },
+    "rsvps": {
+      ".read": "auth != null && auth.token.email == 'indonesiaaaa05@gmail.com'",
+      ".indexOn": ["created_at"],
+      "$rsvpId": {
+        ".write": "auth != null && !data.exists()",
+        ".validate": "newData.hasChildren(['name', 'attendance', 'guests', 'created_at'])",
+        "name": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 80"
+        },
+        "attendance": {
+          ".validate": "newData.val() == 'hadir' || newData.val() == 'tidak_hadir'"
+        },
+        "guests": {
+          ".validate": "newData.isNumber() && (newData.val() == 0 || (newData.val() >= 1 && newData.val() <= 10))"
+        },
+        "created_at": {
+          ".validate": "newData.isNumber()"
+        },
+        "$other": {
+          ".validate": false
+        }
+      }
+    }
+  }
+}
